@@ -168,12 +168,15 @@ button, input, textarea, select {
   letter-spacing: -0.01em;
 }
 
-.section-dark .section-title {
+.section-dark .section-title,
+.section-navy-gradient .section-title {
   color: var(--color-text-white);
 }
 
-.section-title span.text-gold {
-  color: var(--color-gold);
+.section-title.text-gold,
+.section-title span.text-gold,
+.text-gold {
+  color: var(--color-gold) !important;
 }
 
 .section-desc {
