@@ -332,14 +332,30 @@ button, input, textarea, select {
   flex-shrink: 0;
 }
 
+.brand-isotipo-img,
 .brand-logo-img {
-  width: 46px;
-  height: 46px;
-  object-fit: cover;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--color-gold-border);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  width: 44px;
+  height: 44px;
+  max-width: 44px;
+  max-height: 44px;
+  object-fit: contain;
   flex-shrink: 0;
+  display: block;
+}
+
+.hero-brand-logo {
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.hero-brand-img {
+  width: 230px;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-gold-border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  display: block;
 }
 
 .brand-info {
