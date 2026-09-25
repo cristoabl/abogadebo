@@ -2,7 +2,7 @@
    ESTUDIO JURÍDICO INTEGRAL - DRA. DÉBORA DODELSON
    Design System & Stylesheet (High-Conversion Professional Landing Page)
    Palette: Deep Navy (#0A2240), Gold (#C6A664), Crisp White (#FFFFFF)
-   Typography: Playfair Display (Serif) + Inter (Sans-Serif)
+   Typography: Playfair Display (Serif) + Geist (Sans-Serif)
    ========================================================================== */
 
 /* --- Custom Properties & Design Tokens --- */
@@ -36,7 +36,7 @@
   --color-text-white-muted: #CBD5E1;
 
   --font-serif: 'Playfair Display', Georgia, Cambria, 'Times New Roman', serif;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
   --radius-sm: 6px;
   --radius-md: 12px;
@@ -185,7 +185,8 @@ button, input, textarea, select {
   line-height: 1.7;
 }
 
-.section-dark .section-desc {
+.section-dark .section-desc,
+.section-navy-gradient .section-desc {
   color: var(--color-text-white-muted);
 }
 
@@ -1859,3 +1860,161 @@ textarea.form-control {
 .delay-2 { transition-delay: 0.2s; }
 .delay-3 { transition-delay: 0.3s; }
 .delay-4 { transition-delay: 0.4s; }
+
+/* ==========================================================================
+   12. REFINAMIENTO V2 (taste-skill: tipografía, ritmo, superficies, estados)
+   ========================================================================== */
+:root {
+  --color-bg-light: #F7F5F0;
+  --color-border-light: #E7E2D6;
+  --shadow-sm: 0 1px 2px rgba(10, 34, 64, 0.04), 0 2px 6px rgba(10, 34, 64, 0.04);
+  --shadow-md: 0 2px 4px rgba(10, 34, 64, 0.04), 0 14px 32px -12px rgba(10, 34, 64, 0.16);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Tipografía */
+body { font-feature-settings: "ss01", "cv11"; }
+h1, h2, h3, h4 { text-wrap: balance; }
+p { text-wrap: pretty; }
+
+.hero-title {
+  font-size: clamp(2.6rem, 5.4vw, 4.4rem);
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+  font-weight: 600;
+}
+.hero-title em { font-weight: 500; }
+.hero-subtitle { max-width: 34rem; }
+
+.section-title {
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.section-desc { max-width: 60ch; margin-inline: auto; }
+.section-eyebrow { font-weight: 600; letter-spacing: 0.16em; font-size: 0.75rem; }
+.trust-label, .brand-badge { font-variant-numeric: tabular-nums; }
+
+/* Encabezados de sección alineados a la izquierda: rompe la simetría centrada */
+@media (min-width: 992px) {
+  .section-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    column-gap: 4rem;
+    align-items: end;
+    max-width: none;
+    text-align: left;
+    margin-bottom: 4rem;
+  }
+  .section-header .section-eyebrow { grid-column: 1 / -1; }
+  .section-header .section-title { grid-column: 1; margin-bottom: 0; }
+  .section-header .section-desc { grid-column: 2; margin: 0; font-size: 1.05rem; }
+  .section-header .divider-gold { display: none; }
+}
+
+/* Ritmo vertical: más aire, padding inferior ópticamente mayor */
+.section { padding-top: clamp(5rem, 9vw, 7.5rem); padding-bottom: clamp(5.5rem, 10vw, 8.5rem); }
+.hero-section { min-height: 100dvh; }
+
+/* Textura: grano sutil fijo */
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Accesibilidad: skip link y focus visible */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 1100;
+  padding: 0.75rem 1.1rem;
+  background: var(--color-navy);
+  color: var(--color-white);
+  border-radius: var(--radius-sm);
+  transition: top var(--transition-fast);
+}
+.skip-link:focus { top: 1rem; }
+a:focus-visible, button:focus-visible, .form-control:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+/* Botones: feedback táctil */
+.btn { transition: transform 0.2s var(--ease-out), background-color 0.2s ease, color 0.2s ease, box-shadow 0.25s ease, border-color 0.2s ease; }
+.btn:active { transform: translateY(1px) scale(0.985); }
+
+/* Servicios: tarjetas sin borde + sombra genérica, filete dorado superior */
+.services-grid { gap: 1.25rem; }
+.service-card {
+  border: 0;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  background: var(--color-white);
+}
+.service-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.service-icon-wrapper { border-radius: var(--radius-md); }
+.service-card--urgent {
+  background: radial-gradient(120% 90% at 100% 0%, #16406F 0%, var(--color-navy) 55%, var(--color-navy-dark) 100%);
+  color: var(--color-white);
+  box-shadow: 0 20px 40px -18px rgba(6, 22, 43, 0.55);
+}
+.service-card--urgent .service-icon-wrapper { background-color: var(--color-gold); color: var(--color-navy); }
+.service-card--urgent .service-card-title { color: var(--color-white); }
+.service-card--urgent .service-card-desc { color: var(--color-text-white-muted); }
+.service-card--urgent .service-item-list { border-top-color: rgba(255, 255, 255, 0.15); }
+.service-card--urgent .service-item-list li { color: #E2E8F0; }
+
+/* Metodología: línea de tiempo en lugar de 3 tarjetas iguales */
+.steps-grid { gap: 0; counter-reset: step; }
+.step-card {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid rgba(198, 166, 100, 0.3);
+  border-radius: 0;
+  padding: 2.25rem 2rem 0 0;
+}
+.step-card:hover { transform: none; background: transparent; border-color: var(--color-gold); }
+.step-number-badge {
+  position: static;
+  order: -1;
+  font-size: 3.25rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--color-gold);
+  margin-bottom: 1.25rem;
+  font-variant-numeric: lining-nums;
+}
+.step-icon-box { display: none; }
+.step-card-desc { max-width: 38ch; }
+@media (max-width: 991px) { .step-card { padding-right: 0; padding-bottom: 2rem; } }
+
+/* Testimonios: una cita destacada + dos secundarias */
+@media (min-width: 992px) {
+  .testimonials-grid { grid-template-columns: 1.35fr 1fr; grid-template-rows: auto auto; gap: 1.25rem; }
+  .testimonial-card--featured { grid-row: span 2; justify-content: center; padding: 3.5rem; }
+  .testimonial-card--featured .testimonial-text { font-size: 1.55rem; line-height: 1.4; }
+}
+.testimonial-card { border: 0; border-radius: var(--radius-lg); }
+.testimonial-card:hover { transform: none; box-shadow: var(--shadow-md); }
+.testimonial-text { font-family: var(--font-serif); font-style: italic; color: var(--color-navy); }
+.author-avatar-initials { border-radius: var(--radius-md); }
+
+/* Formulario */
+.form-control { border-radius: var(--radius-md); transition: border-color 0.2s ease, box-shadow 0.2s ease; }
+.contact-form-card { border-radius: var(--radius-lg); }
+
+/* Movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1 !important; transform: none !important; }
+}

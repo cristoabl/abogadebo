@@ -44,10 +44,10 @@
   <!-- Google Fonts: Playfair Display + Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/styles.css?v=1.6">
+  <link rel="stylesheet" href="css/styles.css?v=2.0">
 
   <!-- Schema.org Structured Data (LegalService / Attorney) -->
   <script type="application/ld+json">
@@ -100,6 +100,8 @@
   </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Saltar al contenido</a>
+  <div class="grain" aria-hidden="true"></div>
 
   <!-- ========================================================================
        1. HEADER FIJO (Logo + Nav Links + CTA WhatsApp)
@@ -107,7 +109,7 @@
   <header class="site-header" id="site-header">
     <div class="container header-inner">
       <a href="#inicio" class="brand" aria-label="Estudio Jurídico Dodelson - Ir al inicio">
-        <img src="assets/images/isotipo-badge.png" alt="Isotipo DD - Débora Dodelson" class="brand-isotipo-img" width="44" height="44" style="width: 44px; height: 44px; max-height: 44px; display: block; flex-shrink: 0;">
+        <img src="assets/images/isotipo-badge.png" alt="Isotipo DD - Débora Dodelson" class="brand-isotipo-img" width="44" height="44">
         <div class="brand-info">
           <span class="brand-name">DÉBORA DODELSON</span>
           <span class="brand-subtitle">Estudio Jurídico Integral</span>
@@ -162,7 +164,7 @@
             <svg class="hero-badge-icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
             </svg>
-            <span class="hero-badge-text">Atención Directa & Personalizada</span>
+            <span class="hero-badge-text">Atención directa y personalizada</span>
           </div>
 
           <h1 class="hero-title">
@@ -210,7 +212,7 @@
                 </svg>
               </div>
               <div class="floating-badge-text">
-                <strong>Respuesta Rápida</strong>
+                <strong>Respuesta rápida</strong>
                 <span>En el día vía WhatsApp</span>
               </div>
             </div>
@@ -270,7 +272,7 @@
               </svg>
             </div>
             <div>
-              <div class="trust-label">Respuesta Rápida</div>
+              <div class="trust-label">Respuesta rápida</div>
               <div class="trust-sublabel">Contacto directo y ágil</div>
             </div>
           </div>
@@ -297,7 +299,7 @@
 
           <!-- Content Column -->
           <div class="about-content reveal delay-1">
-            <span class="section-eyebrow">Sobre Nosotros</span>
+            <span class="section-eyebrow">Sobre nosotros</span>
             <h2 class="section-title">
               Enfoque humano y <span class="text-gold">rigor técnico</span> al servicio de tus derechos
             </h2>
@@ -311,7 +313,7 @@
               <div class="diff-card">
                 <div class="diff-title">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                  <span>Atención Personalizada</span>
+                  <span>Atención personalizada</span>
                 </div>
                 <p class="diff-desc">Sin intermediarios ni derivación a pasantes. Tu caso es estudiado y conducido directamente por la titular.</p>
               </div>
@@ -319,7 +321,7 @@
               <div class="diff-card">
                 <div class="diff-title">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                  <span>Visión Preventiva</span>
+                  <span>Visión preventiva</span>
                 </div>
                 <p class="diff-desc">Anticipamos contingencias antes de que se transformen en juicios prolongados y de alto costo económico.</p>
               </div>
@@ -348,8 +350,8 @@
       <div class="container">
         
         <div class="section-header reveal">
-          <span class="section-eyebrow">Áreas de Práctica</span>
-          <h2 class="section-title">Especialidades & <span class="text-gold">Servicios Jurídicos</span></h2>
+          <span class="section-eyebrow">Áreas de práctica</span>
+          <h2 class="section-title">Especialidades y <span class="text-gold">servicios jurídicos</span></h2>
           <p class="section-desc">
             Asesoramiento integral con foco estratégico. Cada servicio está respaldado por constante actualización doctrinaria y jurisprudencial.
           </p>
@@ -365,7 +367,7 @@
                 <path d="M12 2c1.1 0 2 .9 2 2v1.08c3.39.49 6 3.39 6 6.92v2c0 .55.45 1 1 1s1 .45 1 1v1c0 .55-.45 1-1 1H3c-.55 0-1-.45-1-1v-1c0-.55.45-1 1-1s1-.45 1-1v-2c0-3.53 2.61-6.43 6-6.92V4c0-1.1.9-2 2-2zm-6 8v2c0 2.97 2.16 5.43 5 5.91V10H6zm7 0v7.91c2.84-.48 5-2.94 5-5.91v-2h-5z"/>
               </svg>
             </div>
-            <h3 class="service-card-title">Derecho Laboral Individual</h3>
+            <h3 class="service-card-title">Derecho laboral individual</h3>
             <p class="service-card-desc">
               Protección exhaustiva de los derechos del trabajador y cuadros jerárquicos ante situaciones de conflicto o extinción contractual.
             </p>
@@ -392,7 +394,7 @@
                 <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/>
               </svg>
             </div>
-            <h3 class="service-card-title">Derecho Laboral Empresarial</h3>
+            <h3 class="service-card-title">Derecho laboral empresarial</h3>
             <p class="service-card-desc">
               Soporte y blindaje jurídico laboral para PyMEs y empresas. Prevenimos pasivos ocultos y optimizamos las relaciones de trabajo.
             </p>
@@ -446,7 +448,7 @@
                 <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/>
               </svg>
             </div>
-            <h3 class="service-card-title">Área Civil</h3>
+            <h3 class="service-card-title">Área civil</h3>
             <p class="service-card-desc">
               Acompañamos y contenemos a nuestros clientes, velando por el ejercicio de aquellos derechos que rigen las relaciones cotidianas.
             </p>
@@ -474,7 +476,7 @@
                 <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
               </svg>
             </div>
-            <h3 class="service-card-title">Área Comercial</h3>
+            <h3 class="service-card-title">Área comercial</h3>
             <p class="service-card-desc">
               Brindamos cobertura integral. Nuestros servicios abarcan el asesoramiento en resolución de conflictos y el litigio como vía judicial para ponerles fin.
             </p>
@@ -494,20 +496,20 @@
           </article>
 
           <!-- Card de Consulta Directa Express -->
-          <article class="service-card reveal delay-2" style="background: linear-gradient(145deg, #0A2240, #06162B); color: #fff; border-color: var(--color-gold-border);">
-            <div class="service-icon-wrapper" style="background-color: var(--color-gold); color: #0A2240;">
+          <article class="service-card service-card--urgent reveal delay-2">
+            <div class="service-icon-wrapper">
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/>
               </svg>
             </div>
-            <h3 class="service-card-title" style="color: #fff;">¿Tu consulta requiere análisis urgente?</h3>
-            <p class="service-card-desc" style="color: #CBD5E1;">
+            <h3 class="service-card-title">¿Tu consulta requiere análisis urgente?</h3>
+            <p class="service-card-desc">
               En materia laboral, los plazos de contestación telegráfica son perentorios. Contactanos de inmediato para preservar intactos tus derechos.
             </p>
-            <ul class="service-item-list" style="border-top-color: rgba(255,255,255,0.15);">
-              <li style="color: #E2E8F0;">Respuesta en el día</li>
-              <li style="color: #E2E8F0;">Atención confidencial</li>
-              <li style="color: #E2E8F0;">Coordinación presencial o virtual</li>
+            <ul class="service-item-list">
+              <li>Respuesta en el día</li>
+              <li>Atención confidencial</li>
+              <li>Coordinación presencial o virtual</li>
             </ul>
             <a href="https://wa.me/5493518587187?text=Hola%20D%C3%A9bora%2C%20tengo%20una%20consulta%20laboral%20urgente%20y%20necesito%20asesoramiento" 
                target="_blank" 
@@ -529,7 +531,7 @@
       <div class="container">
         
         <div class="section-header reveal">
-          <span class="section-eyebrow">Metodología Transparente</span>
+          <span class="section-eyebrow">Metodología transparente</span>
           <h2 class="section-title text-gold">¿Cómo trabajamos juntos?</h2>
           <p class="section-desc">
             Un método claro y ordenado desde el primer contacto. Sin sorpresas, con claridad en los honorarios y comunicación permanente.
@@ -547,7 +549,7 @@
                 <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
               </svg>
             </div>
-            <h3 class="step-card-title">1. Primera Consulta</h3>
+            <h3 class="step-card-title">Primera consulta</h3>
             <p class="step-card-desc">
               Coordinamos una reunión presencial en nuestro estudio de Córdoba o de forma virtual por videollamada. Escuchamos tu caso con atención, analizamos telegramas o contratos y establecemos confidencialidad estricta desde el inicio.
             </p>
@@ -561,7 +563,7 @@
                 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
               </svg>
             </div>
-            <h3 class="step-card-title">2. Análisis del Caso</h3>
+            <h3 class="step-card-title">Análisis del caso</h3>
             <p class="step-card-desc">
               Realizamos un diagnóstico técnico con base en la jurisprudencia más reciente. Evaluamos la viabilidad legal, los plazos exigibles, los riesgos asociados y las opciones de negociación o litigio para que tomes decisiones informadas.
             </p>
@@ -575,7 +577,7 @@
                 <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
               </svg>
             </div>
-            <h3 class="step-card-title">3. Estrategia y Acompañamiento</h3>
+            <h3 class="step-card-title">Estrategia y acompañamiento</h3>
             <p class="step-card-desc">
               Ejecutamos la vía elegida con rigor: desde la redacción epistolar y audiencias conciliatorias hasta la representación en juicio. Mantendrás contacto continuo y reporte del estado de tu causa en cada instancia.
             </p>
@@ -593,7 +595,7 @@
       <div class="container">
         
         <div class="section-header reveal">
-          <span class="section-eyebrow">Confianza y Resultados</span>
+          <span class="section-eyebrow">Confianza y resultados</span>
           <h2 class="section-title">Lo que dicen <span class="text-gold">nuestros clientes</span></h2>
           <p class="section-desc">
             La mejor garantía es el testimonio de quienes confiaron su situación legal y laboral a nuestro estudio.
@@ -604,16 +606,9 @@
         <div class="testimonials-grid">
           
           <!-- Testimonio 1 -->
-          <div class="testimonial-card reveal">
+          <div class="testimonial-card testimonial-card--featured reveal">
             <span class="quote-icon" aria-hidden="true">“</span>
             <div>
-              <div class="testimonial-stars" aria-label="Calificación: 5 de 5 estrellas">
-                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-              </div>
               <p class="testimonial-text">
                 "Excelente profesional. Desde el primer contacto me transmitió una serenidad absoluta. Me despidieron sin causa y gracias a la gestión de Débora logramos un acuerdo indemnizatorio justo en tiempo récord, sin desgastes innecesarios."
               </p>
@@ -631,13 +626,6 @@
           <div class="testimonial-card reveal delay-1">
             <span class="quote-icon" aria-hidden="true">“</span>
             <div>
-              <div class="testimonial-stars" aria-label="Calificación: 5 de 5 estrellas">
-                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-              </div>
               <p class="testimonial-text">
                 "Contratamos al estudio para auditar la estructura contractual y diseñar el programa de integridad de nuestra empresa. La visión en compliance de Débora nos ahorró contingencias críticas. Su rigor técnico es intachable."
               </p>
@@ -655,13 +643,6 @@
           <div class="testimonial-card reveal delay-2">
             <span class="quote-icon" aria-hidden="true">“</span>
             <div>
-              <div class="testimonial-stars" aria-label="Calificación: 5 de 5 estrellas">
-                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-              </div>
               <p class="testimonial-text">
                 "Lo que más valoro es el trato humano y la dedicación personalizada. No delega tu expediente a pasantes como suele suceder en otros estudios. Débora estuvo al frente de cada negociación con una solvencia impecable."
               </p>
@@ -687,7 +668,7 @@
       <div class="container">
         
         <div class="section-header reveal">
-          <span class="section-eyebrow">Canales de Contacto</span>
+          <span class="section-eyebrow">Canales de contacto</span>
           <h2 class="section-title">Iniciá tu consulta <span class="text-gold">hoy mismo</span></h2>
           <p class="section-desc">
             Estamos a tu disposición para evaluar tu situación de manera confidencial y brindarte una respuesta certera.
@@ -701,7 +682,7 @@
           <div class="contact-info-panel reveal">
             
             <div class="contact-highlight-box">
-              <h3>Vía Directa por WhatsApp</h3>
+              <h3>Vía directa por WhatsApp</h3>
               <p>
                 Para una atención inmediata y coordinación ágil de turnos presenciales o virtuales, escribinos directamente:
               </p>
@@ -765,7 +746,7 @@
 
             <!-- Mapa Placeholder Córdoba -->
             <div class="map-card-placeholder">
-              <h4>Ubicación & Modalidad de Atención</h4>
+              <h4>Ubicación y modalidad de atención</h4>
               <p>Atención presencial en la Ciudad de Córdoba y modalidad virtual sincrónica para clientes en todo el país.</p>
               
               <div class="map-visual-box">
@@ -786,7 +767,7 @@
           <!-- Form Column -->
           <div class="contact-form-card reveal delay-1">
             <div class="form-header">
-              <h3>Formulario de Contacto</h3>
+              <h3>Formulario de contacto</h3>
               <p>Completá los datos y te responderemos a la brevedad con una primera orientación.</p>
             </div>
 
@@ -823,7 +804,7 @@
               </div>
 
               <p class="form-disclaimer">
-                🔒 <strong>Privacidad asegurada:</strong> Tu información está protegida por el deber ético y legal de secreto profesional.
+                <strong>Privacidad asegurada.</strong> Tu información está protegida por el deber ético y legal de secreto profesional.
               </p>
 
               <div class="form-actions">
@@ -859,7 +840,7 @@
         <!-- Columna 1: Brand & Bio -->
         <div class="footer-brand">
           <div class="brand">
-            <img src="assets/images/isotipo-badge.png" alt="Logo Estudio Jurídico Dodelson" class="brand-isotipo-img" width="44" height="44" style="width: 44px; height: 44px; max-height: 44px; display: block; flex-shrink: 0;">
+            <img src="assets/images/isotipo-badge.png" alt="Logo Estudio Jurídico Dodelson" class="brand-isotipo-img" width="44" height="44">
             <div class="brand-info">
               <span class="brand-name">DÉBORA DODELSON</span>
               <span class="brand-subtitle">Estudio Jurídico Integral</span>
