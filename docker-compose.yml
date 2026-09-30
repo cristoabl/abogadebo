@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    container_name: estudiododelson-web
+    restart: always
+    ports:
+      - "127.0.0.1:3020:80"
