@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Configuration ---
   const WHATSAPP_NUMBER = '5493518587187';
-  const PRIMARY_EMAIL = 'abog.dodelson.debora@gmail.com';
+  const PRIMARY_EMAIL = 'contacto@estudiododelson.com.ar';
 
   // --- 1. Sticky Header State on Scroll ---
   const header = document.querySelector('.site-header');
